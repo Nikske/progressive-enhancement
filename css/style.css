@@ -10,6 +10,7 @@ body {
 /* What I'm saying with this one is essentially :"If the first child (element) of the header is an H1, make the background colour yellow." */
 header h1:first-child {
     /* this is a background colour with opacity, neat. (the 0.62 number there) */
+    /* Phpstorm has a really good colour picker if you choose the option 'choose color' */
     background-color: rgba(200, 255, 46, 0.62);
     padding: 2%;
 }
@@ -39,19 +40,19 @@ img {
     z-index: 3;
 }
 /* These classes here are used throughout the entire document, they provide small style changes that for instance: are applied to words that appear often. */
-/* When the neighbours speak */
+/* Add a little line before when the neighbours speak */
 .neighbour {
     border-left: blue 3px solid;
 }
-/* When the farmer speaks */
+/* Add a little line before when the farmer speaks */
 .farmer {
     border-left: red 3px solid;
 }
-/* Every instance of the word 'good' */
+/* Every instance of the word 'good' marked with the "good" class is now green */
 .good {
     color: forestgreen;
 }
-/* Every instance of the word 'bad' */
+/* Every instance of the word 'bad' with the "bad" class is now red */
 .bad {
     color: red;
 }
