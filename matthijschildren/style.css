@@ -1,0 +1,27 @@
+.parent p:first-child {
+    color: red;
+    text-decoration: line-through;
+}
+
+.parent span:first-child {
+    font-size: 100px;
+    color: green;
+} /* This will not work, because span is not the first child of the parent '.parent' */
+
+.parent div:first-of-type {
+    text-decoration: underline;
+}
+
+
+.parent div:nth-child(even) {
+    border: 4px purple solid;
+}
+
+.parent :first-of-type {
+    background: yellow;
+}
+
+.parent {
+    text-transform: uppercase;
+    font-size: 30px;
+}
