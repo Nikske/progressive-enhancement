@@ -1,0 +1,82 @@
+
+.art1 {
+    width: 50px;
+    display: block;
+    border: black solid;
+    padding: 5px;
+    margin: 30px;
+    background-color: forestgreen;
+    color: white;
+}
+
+.art2 {
+    width: 50px;
+    display: inline;
+    border: red solid;
+    background-color: mediumvioletred;
+    margin: 30px 150px 30px 30px;
+    color: yellow;
+}
+
+.art3 {
+    width: 70px ;
+    display: inline-block;
+    border: orange solid;
+    background-color: yellow;
+    margin: 30px;
+    padding: 5px;
+
+
+}
+
+.art4 {
+    border: solid black;
+}
+
+div {
+
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+
+}
+
+#art41 {
+    flex: 2;
+}
+
+#art42 {
+    flex: 1;
+}
+
+#art43 {
+    flex: 2;
+}
+
+
+
+h1 {
+    width: 50%;
+    display: block;
+    border: black solid;
+    float: left;
+    margin: 0;
+}
+
+#rondtekst {
+    color: purple;
+}
+
+body {
+    background-color: salmon;
+}
+
+#floatleft {
+    float: left;
+}
+
+#floatright {
+    float: right;
+}
