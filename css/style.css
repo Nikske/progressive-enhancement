@@ -9,7 +9,8 @@ body {
 }
 /* What I'm saying with this one is essentially :"If the first child (element) of the header is an H1, make the background colour yellow." */
 header h1:first-child {
-    background-color: yellow;
+    /* this is a background colour with opacity, neat. (the 0.62 number there) */
+    background-color: rgba(200, 255, 46, 0.62);
     padding: 2%;
 }
 header p:first-child {
@@ -26,8 +27,8 @@ img {
 }
 /* Position:fixed is saying it should always remain in place, even if we start scrolling. */
 #notification {
-    background:#FFFFDD;
-    padding:.5rem 1rem;
+    background-color: whitesmoke;
+    padding: 0.3%;
     border:3px solid #DDDDCC;
     width:250px;
     font-weight:bold;
@@ -35,19 +36,24 @@ img {
     position:fixed;
     bottom:0;
     right:0;
+    z-index: 3;
 }
 /* These classes here are used throughout the entire document, they provide small style changes that for instance: are applied to words that appear often. */
+/* When the neighbours speak */
 .neighbour {
-    border-left: #daff2c 3px solid;
+    border-left: blue 3px solid;
 }
+/* When the farmer speaks */
 .farmer {
-    border-left: #ffb447 3px solid;
+    border-left: red 3px solid;
 }
+/* Every instance of the word 'good' */
 .good {
-    color: #7cff6a;
+    color: forestgreen;
 }
+/* Every instance of the word 'bad' */
 .bad {
-    color: #ff5c41;
+    color: red;
 }
 
 #story {
@@ -81,6 +87,7 @@ tr:nth-child(even) {
 }
 tr:nth-child(odd) {
     background-color: #295e0b;
+    color: whitesmoke;
 }
 blockquote {
     width: 50%;
@@ -94,18 +101,21 @@ footer {
     font-size: 80%;
     text-align: center;
 }
-/* Styling links */
+/* Styling links. Each 'state' is a different line */
 /* Unvisited */
 a:link {
     color: red;
+    text-decoration: none;
 }
 /* Visited */
 a:visited {
     color: green;
+    text-decoration: none;
 }
 /* Mouse over */
 a:hover {
     color: hotpink;
+    text-decoration: none;
 }
 
 /* --------------------------- Presentation aid aka don't bother looking at this unless you really want to --------------------- */
@@ -124,7 +134,7 @@ article {
     margin: auto;
 }
 footer {
-    background-color: #fff259;
+    background-color: #fffc42;
     border: 3px solid #a0933e;
 }
 #shitlist {
